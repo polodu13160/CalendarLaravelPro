@@ -1,6 +1,7 @@
-## <span style="color:red; font-size:32px; font-weight:bold">LE PROJET EST EN COURS DE DEVELOPPEMENT</span>
+## <font color='red'>**LE PROJET EST EN COURS DE DEVELOPPEMENT**</font>
 
-## <span style="color:red; font-size:32px; font-weight:bold">THE PROJECT IS UNDER DEVELOPMENT</span>
+## <font color='red'>**THE PROJECT IS UNDER DEVELOPMENT**</font>
+
 
 
 
