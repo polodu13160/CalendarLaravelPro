@@ -1,7 +1,7 @@
 <x-layout>
 
     <x-slot:title>
-        Laravel Fullcalender Tutorial Tutorial - ItSolutionStuff.com
+        Laravel Fullcalender
     </x-slot:title>
 
     <x-slot:select1>
