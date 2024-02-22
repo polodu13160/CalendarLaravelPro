@@ -16,12 +16,12 @@ use App\Http\Controllers\FullCalenderController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 
 Route::controller(FullCalenderController::class)->group(function () {
 
-    Route::get('fullcalender', 'index');
+    Route::get('fullcalender', 'index')->name('fullcalender');
 
     Route::post('fullcalenderAjax', 'ajax');
 });

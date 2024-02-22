@@ -1,49 +1,49 @@
-<!DOCTYPE html>
+<x-layout>
 
-<html>
+    <x-slot:title>
+        Laravel Fullcalender Tutorial Tutorial - ItSolutionStuff.com
+    </x-slot:title>
 
-<head>
+    <x-slot:select1>
+        navigation-link-select
+    </x-slot:select1>
 
-    <title>Laravel Fullcalender Tutorial Tutorial - ItSolutionStuff.com</title>
+    <x-slot:headSlot>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-
-</head>
-
-<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
 
 
 
-    <div class="container">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-        <h1>Laravel 10 FullCalender Tutorial Example - ItSolutionStuff.com</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    </x-slot:headSlot>
 
-        <div id='calendar'></div>
-
-    </div>
-
+    <body>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
+
+        <div class="container">
+
+            <h1>Laravel 10 FullCalender Tutorial Example - ItSolutionStuff.com</h1>
+
+            <div id='calendar'></div>
+
+        </div>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
 
 
 
@@ -280,10 +280,10 @@
             toastr.success(message, 'Event');
 
         }
-    </script>
+        </script>
 
 
 
-</body>
+    </body>
 
-</html>
+</x-layout>
