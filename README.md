@@ -1,47 +1,66 @@
-## <font color='red'>**LE PROJET EST EN COURS DE DEVELOPPEMENT**</font>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## <font color='red'>**THE PROJECT IS UNDER DEVELOPMENT**</font>
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
+## About Laravel
 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-# CalendarLaravelPro
-This project aims to develop an interactive calendar using the Laravel framework. The goal is to allow users to manage their appointments and events efficiently, with advanced features such as integration and the ability to modify through personal calendars like Google Calendar and Apple Calendar.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Learning Laravel
 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-### Français :
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-# Projet de Calendrier Interactif avec Laravel
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Ce projet vise à développer un calendrier interactif en utilisant le framework Laravel. L'objectif est de permettre aux utilisateurs de gérer leurs rendez-vous et événements de manière efficace, avec des fonctionnalités avancées telles que l'intégration et la possibilité de modifier à travers des calendriers personnels comme Google Calendar et Apple Calendar.
+## Laravel Sponsors
 
-## Caractéristiques Clés :
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-- **Authentification :** Les utilisateurs auront la possibilité de créer un compte, de se connecter et de gérer leurs informations personnelles via un système d'authentification sécurisé intégré.
-- **Vue Calendrier :** Une interface affichera les événements dans un format calendrier, permettant aux utilisateurs de visualiser leurs rendez-vous à différents intervalles de temps.
-- **Vue des Événements :** Une liste détaillée des événements sera également disponible, permettant aux utilisateurs de consulter rapidement les détails des événements.
-- **Gestion des Groupes de Travail :** Les utilisateurs auront la possibilité de visualiser les événements en fonction des groupes de travail auxquels ils appartiennent, facilitant ainsi la coordination entre collègues.
-- **Intégration avec les Calendriers Personnels :** Les utilisateurs pourront exporter et importer des événements vers leurs calendriers personnels, tels que Google Calendar et Apple Calendar, pour une synchronisation bi-directionnelle (Agenda personnel et CalendarLaravel).
-- **Fonctionnalité de Modification :** Les utilisateurs peuvent créer, modifier et supprimer des événements selon leurs besoins, avec des contrôles de permission appropriés pour garantir la sécurité des données.
-- **Déploiement :** Le projet est concu pour être déployé sur un serveur. 
+### Premium Partners
 
-Ce projet offrira une solution complète pour la gestion efficace des rendez-vous et des événements, tout en assurant une expérience utilisateur optimale.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-### English :
+## Contributing
 
-# Interactive Calendar Project with Laravel
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-This project aims to develop an interactive calendar using the Laravel framework. The goal is to allow users to manage their appointments and events efficiently, with advanced features such as integration and the ability to modify through personal calendars like Google Calendar and Apple Calendar.
+## Code of Conduct
 
-## Key Features :
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-- **Authentication :** Users will have the ability to create an account, log in, and manage their personal information through a secure built-in authentication system.
-- **Calendar View :** A user interface will display events in a calendar format, enabling users to visualize their appointments at different time intervals.
-- **Event View :** A detailed list view of events will also be available, allowing users to quickly review event details.
-- **Workgroup Management :** Users will have the option to view events based on the workgroups they belong to, facilitating coordination among colleagues.
-- **Integration with Personal Calendars :** Users will be able to export and import events to their personal calendars, such as Google Calendar and Apple Calendar, for bidirectional synchronization between the personal calendar and CalendarLaravel.
-- **Modification Functionality :** Users can create, modify, and delete events as needed, with appropriate permission controls to ensure data security.
-- **Deployment :** The project is designed to be deployed on a server.
+## Security Vulnerabilities
 
-This project will provide a comprehensive solution for efficient appointment and event management, while ensuring an optimal user experience.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
