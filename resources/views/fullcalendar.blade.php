@@ -121,9 +121,9 @@
 
                 select: function(start, end, allDay) {
 
-                    var title = prompt('Event Title:');
+                    var input = prompt('Nom du rendez-vous :');
 
-                    if (title) {
+                    if (input) {
 
                         var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm");
 
@@ -135,7 +135,7 @@
 
                             data: {
 
-                                name: title,
+                                name: input,
 
                                 date_start: start,
 
@@ -159,7 +159,7 @@
 
                                         id: data.id,
 
-                                        title: title,
+                                        title: input,
 
                                         start: start,
 
@@ -195,7 +195,7 @@
 
                         data: {
 
-                            name: event.title,
+                            name: event.input,
 
                             date_start: start,
 
