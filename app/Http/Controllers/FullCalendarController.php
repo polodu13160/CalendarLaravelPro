@@ -41,7 +41,7 @@ class FullCalendarController extends Controller
 
                 ->whereDate('date_end',   '<=', $request->end)
 
-                ->get(['id', 'name', 'date_start', 'date_end', 'is_all_day', 'description']);
+                ->get(['id', 'name', 'date_start', 'date_end', 'description']);
 
 
 
