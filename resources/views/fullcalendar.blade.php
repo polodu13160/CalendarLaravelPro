@@ -1,7 +1,7 @@
 <x-layout>
 
     <x-slot:title>
-        Laravel Fullcalender
+        Laravel Fullcalendar
     </x-slot:title>
 
     <x-slot:select1>
@@ -21,8 +21,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
 
-
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
@@ -34,7 +32,7 @@
 
         <div class="container">
 
-            <h1>Laravel 10 FullCalender Tutorial Example - ItSolutionStuff.com</h1>
+            <h1>FullCalendar in Laravel</h1>
 
             <div id='calendar'></div>
 
@@ -87,7 +85,7 @@
 
             --------------------------------------------
 
-            FullCalender JS Code
+            FullCalendar JS Code
 
             --------------------------------------------
 
@@ -97,7 +95,7 @@
 
                 editable: true,
 
-                events: SITEURL + "/fullcalender",
+                events: SITEURL + "/fullcalendar",
 
                 displayEventTime: false,
 
@@ -105,13 +103,13 @@
 
                 eventRender: function(event, element, view) {
 
-                    if (event.allDay === 'true') {
+                    if (event.is_all_day === 'true') {
 
-                        event.allDay = true;
+                        event.is_all_day = true;
 
                     } else {
 
-                        event.allDay = false;
+                        event.is_all_day = false;
 
                     }
 
@@ -121,27 +119,27 @@
 
                 selectHelper: true,
 
-                select: function(start, end, allDay) {
+                select: function(date_start, date_end, is_all_day) {
 
                     var title = prompt('Event Title:');
 
                     if (title) {
 
-                        var start = $.fullCalendar.formatDate(start, "Y-MM-DD");
+                        var start = $.fullCalendar.formatDate(date_start, "Y-MM-DD HH:mm");
 
-                        var end = $.fullCalendar.formatDate(end, "Y-MM-DD");
+                        var end = $.fullCalendar.formatDate(date_end, "Y-MM-DD HH:mm");
 
                         $.ajax({
 
-                            url: SITEURL + "/fullcalenderAjax",
+                            url: SITEURL + "/fullcalendarAjax",
 
                             data: {
 
-                                title: title,
+                                name: title,
 
-                                start: start,
+                                date_start: start,
 
-                                end: end,
+                                date_end: end,
 
                                 type: 'add'
 
@@ -161,11 +159,11 @@
 
                                         id: data.id,
 
-                                        title: title,
+                                        name: name,
 
-                                        start: start,
+                                        date_start: date_start,
 
-                                        end: end,
+                                        date_end: date_end,
 
                                         allDay: allDay
 
@@ -193,7 +191,7 @@
 
                     $.ajax({
 
-                        url: SITEURL + '/fullcalenderAjax',
+                        url: SITEURL + '/fullcalendarAjax',
 
                         data: {
 
@@ -231,7 +229,7 @@
 
                             type: "POST",
 
-                            url: SITEURL + '/fullcalenderAjax',
+                            url: SITEURL + '/fullcalendarAjax',
 
                             data: {
 
