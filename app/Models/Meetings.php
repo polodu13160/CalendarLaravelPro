@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Meetings extends Model
 {
     use HasFactory;
+
+    /**
+
+     * The attributes that are mass assignable.
+
+     *
+
+     * @var array
+
+     */
+
+    protected $fillable = [
+
+        'name', 'deleted', 'date_start', 'date_end', 'is_all_day', 'description'
+    ];
 }

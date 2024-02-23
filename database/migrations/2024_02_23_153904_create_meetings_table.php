@@ -13,7 +13,16 @@ return new class extends Migration
     {
         Schema::create('meetings', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->boolean('deleted')->default(false);
+            $table->timestamp('date_start');
+            $table->timestamp('date_end');
+            $table->boolean('is_all_day')->default(true);
+            $table->text('description')->nullable();
             $table->timestamps();
+            $table->string('created_by_id')->nullable();
+            $table->string('updated_by_id')->nullable();
+            $table->string('assigned_user_id')->nullable();
         });
     }
 
