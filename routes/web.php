@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FullCalenderController;
+use App\Http\Controllers\FullCalendarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +19,9 @@ Route::get('/', function () {
 })->name('welcome');
 
 
-Route::controller(FullCalenderController::class)->group(function () {
+Route::controller(FullCalendarController::class)->group(function () {
 
-    Route::get('fullcalender', 'index')->name('fullcalender');
+    Route::get('fullcalendar', 'index')->name('fullcalendar');
 
-    Route::post('fullcalenderAjax', 'ajax');
+    Route::post('fullcalendarAjax', 'ajax');
 });
