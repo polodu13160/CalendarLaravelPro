@@ -2,10 +2,10 @@
 
 <head>
     <meta charset="UTF-8">
-    {{$headSlot ?? ""}}
+    {{$bladeHeadSlot ?? ""}}
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'Todo Manager' }}</title>
+    <title>{{ $bladeTitle ?? 'Todo Manager' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -20,21 +20,23 @@
         <aside class="aside">
             <nav class="navigation" role="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-item"><a class="navigation-link {{$select1 ?? ""}}"
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar1 ?? ""}}"
                             href="{{route('fullcalender')}}">Calendar</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$select2 ?? ""}}"
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar2 ?? ""}}"
                             href="{{route('welcome')}}">Welcome</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$select3 ?? ""}}" href="">Carola</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$select4 ?? ""}}" href="">Kuglof</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$select5 ?? ""}}" href="">Wurscht</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar3 ?? ""}}" href="">Carola</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar4 ?? ""}}" href="">Kuglof</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar5 ?? ""}}" href="">Wurscht</a></li>
                 </ul>
             </nav>
             <p>Lorem Salu bissame ! Wie geht's les samis ? Hans apporte moi une Wurschtsalad avec un picon bitte, s'il
                 te plaît. Voss ? Une Carola et du Melfor ? Yo dû, espèce de Knäckes, ch'ai dit un picon !</p>
         </aside>
 
-        <main id="main" role="main" class="main">
-            {{ $slot }}
+        <main id="main" role="main" class="main {{ $bladeCss1 ?? "" }}">
+            {{ $bladeSlot1 ?? "" }}
+            {{ $bladeSlot2 ?? "" }}
+
         </main>
 
         <footer class="footer" role="contentinfo">
