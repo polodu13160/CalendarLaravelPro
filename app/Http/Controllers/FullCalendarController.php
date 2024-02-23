@@ -37,9 +37,9 @@ class FullCalendarController extends Controller
 
 
 
-            $data = Meetings::whereDate('date_start', '>=', $request->date_start)
+            $data = Meetings::whereDate('date_start', '>=', $request->start)
 
-                ->whereDate('date_end',   '<=', $request->date_end)
+                ->whereDate('date_end',   '<=', $request->end)
 
                 ->get(['id', 'name', 'date_start', 'date_end', 'is_all_day', 'description']);
 

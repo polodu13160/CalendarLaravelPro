@@ -195,7 +195,7 @@
 
                         data: {
 
-                            name: event.name,
+                            name: event.title,
 
                             date_start: start,
 
