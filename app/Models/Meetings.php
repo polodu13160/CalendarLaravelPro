@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 
 
-class Event extends Model
+class Meetings extends Model
 
 {
 
@@ -32,7 +32,7 @@ class Event extends Model
 
     protected $fillable = [
 
-        'title', 'start', 'end'
+        'name', 'deleted', 'date_start', 'date_end', 'is_all_day', 'description'
 
     ];
 }
