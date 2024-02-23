@@ -103,13 +103,13 @@
 
                 eventRender: function(event, element, view) {
 
-                    if (event.is_all_day === 'true') {
+                    if (event.allDay === 'true') {
 
-                        event.is_all_day = true;
+                        event.allDay = true;
 
                     } else {
 
-                        event.is_all_day = false;
+                        event.allDay = false;
 
                     }
 
@@ -119,15 +119,15 @@
 
                 selectHelper: true,
 
-                select: function(date_start, date_end, is_all_day) {
+                select: function(start, end, allDay) {
 
                     var title = prompt('Event Title:');
 
                     if (title) {
 
-                        var start = $.fullCalendar.formatDate(date_start, "Y-MM-DD HH:mm");
+                        var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm");
 
-                        var end = $.fullCalendar.formatDate(date_end, "Y-MM-DD HH:mm");
+                        var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm");
 
                         $.ajax({
 
@@ -135,11 +135,11 @@
 
                             data: {
 
-                                name: title,
+                                title: title,
 
-                                date_start: start,
+                                start: start,
 
-                                date_end: end,
+                                end: end,
 
                                 type: 'add'
 
@@ -159,11 +159,11 @@
 
                                         id: data.id,
 
-                                        name: name,
+                                        title: title,
 
-                                        date_start: date_start,
+                                        start: start,
 
-                                        date_end: date_end,
+                                        end: end,
 
                                         allDay: allDay
 
