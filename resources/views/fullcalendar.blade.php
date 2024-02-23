@@ -135,11 +135,11 @@
 
                             data: {
 
-                                title: title,
+                                name: title,
 
-                                start: start,
+                                date_start: start,
 
-                                end: end,
+                                date_end: end,
 
                                 type: 'add'
 
@@ -183,9 +183,9 @@
 
                 eventDrop: function(event, delta) {
 
-                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD");
+                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm");
 
-                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD");
+                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm");
 
 
 
@@ -195,11 +195,11 @@
 
                         data: {
 
-                            title: event.title,
+                            name: event.name,
 
-                            start: start,
+                            date_start: start,
 
-                            end: end,
+                            date_end: end,
 
                             id: event.id,
 
