@@ -20,11 +20,9 @@
         <aside class="aside">
             <nav class="navigation" role="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar1 ?? ""}}"
-                            href="{{route('fullcalender')}}">Calendar</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar2 ?? ""}}"
-                            href="{{route('welcome')}}">Welcome</a></li>
-                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar3 ?? ""}}" href="">Carola</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar1 ?? ""}}" href="{{route('fullcalender')}}">Calendar</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar2 ?? ""}}" href="{{route('welcome')}}">Welcome</a></li>
+                    <li class="navigation-item"><a class="navigation-link {{$bladeCssBar3 ?? ""}}" href="{{ route('test') }}">test</a></li>
                     <li class="navigation-item"><a class="navigation-link {{$bladeCssBar4 ?? ""}}" href="">Kuglof</a></li>
                     <li class="navigation-item"><a class="navigation-link {{$bladeCssBar5 ?? ""}}" href="">Wurscht</a></li>
                 </ul>
@@ -34,7 +32,7 @@
         </aside>
 
         <main id="main" role="main" class="main {{ $bladeCss1 ?? "" }}">
-            {{ $slot }}
+            {{ $slot ?? "" }}
             {{ $bladeSlot1 ?? "" }}
             {{ $bladeSlot2 ?? "" }}
 

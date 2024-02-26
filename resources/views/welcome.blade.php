@@ -1,7 +1,11 @@
 <x-layout>
-    <x-slot:select2>
+    <x-slot:bladeTitle>
+        Laravel Fullcalender
+    </x-slot:title>
+    
+    <x-slot:bladeCssBar2>
         navigation-link-select
-    </x-slot:select2>
+    </x-slot:bladeCssBar2 >
     <div>
 
         <h1>Hello World!</h1>

@@ -4,8 +4,7 @@
 
 namespace App\Http\Controllers;
 
-
-
+use App\Models\Evenement;
 use Illuminate\Http\Request;
 
 use App\Models\Event;
@@ -132,5 +131,20 @@ class FullCalenderController extends Controller
 
                 break;
         }
+    }
+    public function getTest(){
+        // $evenement=new Evenement();
+        // $evenement->title="test2";
+        // $evenement->content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quidem distinctio delectus beatae facere perspiciatis sint eligendi aperiam porro. Dolores quod vitae ullam similique eveniet, laborum fuga reiciendis tenetur in.";
+        // $evenement->startTime = "09:00:00"; // Format heure HH:MM:SS
+        // $evenement->endTime = "10:00:00"; // Format heure HH:MM:SS
+        // $evenement->startDay = "2024-02-27"; // Format date YYYY-MM-DD
+        // $evenement->endDay = "2024-02-28"; // Format date YYYY-MM-DD
+        // $evenement->save();
+        // return $evenement;
+        return view('test');
+    }
+    public function postTest(Request $request){
+        dd($request);
     }
 }

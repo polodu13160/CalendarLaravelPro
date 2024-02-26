@@ -24,5 +24,8 @@ Route::controller(FullCalenderController::class)->group(function () {
     Route::get('fullcalender', 'index')->name('fullcalender');
 
     Route::post('fullcalenderAjax', 'ajax');
+
+    Route::get('test','getTest')->name('test');
+    Route::post('test','postTest');
     
 });
