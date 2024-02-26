@@ -64,16 +64,8 @@ main {
     background: #eee;
     padding: 1rem;
 }
-.raw{
-    --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(var(--bs-gutter-y) * -1);
-        margin-right: calc(var(--bs-gutter-x) * -.5);
-        margin-left: calc(var(--bs-gutter-x) * -.5);
 
-}
+
 
 
 aside {
@@ -100,3 +92,23 @@ a {
 }
 
 /* Vos styles ici */
+
+.raw {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+
+}
+.container {
+    max-width: 70%;
+    
+}
+
+.shadow {
+    margin-top: auto;
+    
+}
