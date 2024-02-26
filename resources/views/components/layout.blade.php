@@ -34,6 +34,7 @@
         </aside>
 
         <main id="main" role="main" class="main {{ $bladeCss1 ?? "" }}">
+            {{ $slot }}
             {{ $bladeSlot1 ?? "" }}
             {{ $bladeSlot2 ?? "" }}
 
