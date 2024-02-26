@@ -42,6 +42,10 @@
             {{ $bladeSlot1 ?? "" }}
             {{ $bladeSlot2 ?? "" }}
 
+                <div id="app">
+            {{$vue ?? ""}}
+                </div>
+
         </main>
 
         <footer class="footer" role="contentinfo">

@@ -5,7 +5,7 @@
 <x-layout>
 
     <x-slot:bladeTitle>
-        
+
     </x-slot:bladeTitle>
 
     <x-slot:bladeCssBar{{$x}}>
@@ -19,7 +19,7 @@
 
 
     <x-slot:bladeHeadSlot>
-        
+
     </x-slot:bladeHeadSlot>
 
     <x-slot:bladeSlot1>
@@ -27,10 +27,10 @@
     </x-slot:bladeSlot1>
 
     <x-slot:bladeSlot2>
-    
+
     </x-slot:bladeSlot2>
 
-   
+
 
 </x-layout>
 
