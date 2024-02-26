@@ -11,7 +11,7 @@ class Evenement extends Model
 
     protected $fillable = [
 
-        'title', 'content', 'end'
+        'title', 'startTime', 'endTime', 'content', 'startDay', 'endDay'
 
     ];
 }

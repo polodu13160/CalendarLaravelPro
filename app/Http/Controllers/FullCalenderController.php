@@ -141,10 +141,19 @@ class FullCalenderController extends Controller
         // $evenement->startDay = "2024-02-27"; // Format date YYYY-MM-DD
         // $evenement->endDay = "2024-02-28"; // Format date YYYY-MM-DD
         // $evenement->save();
-        // return $evenement;
+        // dd(session()->all());
         return view('test');
     }
     public function postTest(Request $request){
-        dd($request);
+        // dd($request->all());
+        $evenement= Evenement::create([
+            'title'=> $request->input('title'),
+            'content' => $request->input('content'),
+            'startDay' => $request->input('startDay'),
+            'endDay' => $request->input('endDay'),
+            'startTime' => $request->input('startTime'),
+            'endTime' => $request->input('endTime'),
+        ]);
+        return redirect()->route('test')->with('success',"l'event est bien créé");
     }
 }
