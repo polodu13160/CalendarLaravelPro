@@ -1,2 +1,2 @@
-composer create-project laravel/laravel fullCalendarGoogle
-
+composer install
+npm install
