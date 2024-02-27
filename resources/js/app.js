@@ -2,7 +2,7 @@ import './bootstrap';
 
 
 import {createApp} from "vue";
-import UserList from "./components/userList.vue";
+import UserList from "./components/UserList.vue";
 
 
 
