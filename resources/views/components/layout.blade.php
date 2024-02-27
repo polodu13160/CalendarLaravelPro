@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    {{$bladeHeadSlot ?? ""}}
+    @yield('head')
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $bladeTitle ?? 'Todo Manager' }}</title>
@@ -32,18 +32,16 @@
                 te plaît. Voss ? Une Carola et du Melfor ? Yo dû, espèce de Knäckes, ch'ai dit un picon !</p>
         </aside>
 
-        <main id="main" role="main" class="main {{ $bladeCss1 ?? "" }}">
+        <main id="main" role="main" class="main @yield('css1')">
             @if (session('success'))
             <div class="alert alert-success alert-sm">
                 {{ session('success') }}
             </div>
             @endif
-            {{ $slot ?? "" }}
-            {{ $bladeSlot1 ?? "" }}
-            {{ $bladeSlot2 ?? "" }}
+            @yield('content')
 
                 <div id="app">
-            {{$vue ?? ""}}
+                    @yield('vue')
                 </div>
 
         </main>

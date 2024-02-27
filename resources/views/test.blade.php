@@ -1,32 +1,18 @@
+@extends('components.layout')
+
+@php
+
+    $bladeTitle = 'Laravel';
+    $bladeCssBar3='navigation-link-select';
+    $bladeCss1='raw';
+@endphp
+@section('head')
+@endsection
 
 
-<x-layout>
-
-    <x-slot:bladeTitle>
-
-    </x-slot:bladeTitle>
-
-    <x-slot:bladeCssBar3>
-        navigation-link-select
-    </x-slot:bladeCssBar3>
-
-    <x-slot:bladeCss1>
-
-    </x-slot:bladeCss1>
+@section('content')
 
 
-
-    <x-slot:bladeHeadSlot>
-
-    </x-slot:bladeHeadSlot>
-
-    {{-- <x-slot:bladeSlot1>
-
-    </x-slot:bladeSlot1>
-
-    <x-slot:bladeSlot2>
-
-    </x-slot:bladeSlot2> --}}
     <div class="bd-example m-0 border-0">
     <form class="row needs-validation"  action="" method="post">
         @csrf
@@ -66,12 +52,7 @@
     </form>
     </div>
 
-    <x-slot:vue>
-        <user-list></user-list>
-    </x-slot:vue>
+    @endsection
 
 
-
-
-</x-layout>
 

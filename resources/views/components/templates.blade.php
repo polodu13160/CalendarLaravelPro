@@ -1,36 +1,14 @@
+@extends('components.layout')
+
 @php
-    $x=1
+
+    $bladeTitle = 'Laravel';
+    $bladeCssBar1='navigation-link-select';
+    $bladeCss1='raw';
 @endphp
 
-<x-layout>
+@section('head')
 
-    <x-slot:bladeTitle>
+@endsection
 
-    </x-slot:bladeTitle>
-
-    <x-slot:bladeCssBar{{$x}}>
-        navigation-link-select
-    </x-slot:bladeCssBar{{$x}}>
-
-    <x-slot:bladeCss1>
-        row
-    </x-slot:bladeCss1>
-
-
-
-    <x-slot:bladeHeadSlot>
-
-    </x-slot:bladeHeadSlot>
-
-    <x-slot:bladeSlot1>
-
-    </x-slot:bladeSlot1>
-
-    <x-slot:bladeSlot2>
-
-    </x-slot:bladeSlot2>
-
-
-
-</x-layout>
-
+@section('content')@endsection
