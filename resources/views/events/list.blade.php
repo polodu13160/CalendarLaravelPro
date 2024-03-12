@@ -70,7 +70,7 @@
 
         let calendar = null;
         document.addEventListener('DOMContentLoaded', function () {
-            let calendarEl = document.getElementById('calendar');
+            let calendarEl = document.querySelector('#calendar');
             calendar = new FullCalendar.Calendar(calendarEl, {
                 editable: true,
                 locale: 'fr',
@@ -88,7 +88,7 @@
                         showNonCurrentDates: true
                     },
                 },
-                events: '{{route('refetch-events')}}',
+                events: "{{route('refetch-events')}}",
                 dateClick: function (info) {
                     let startDate, endDate, allDay;
                     allDay = $('#is_all_day').prop('checked');
@@ -108,6 +108,7 @@
                     $('#eventModal').modal('show');
                 },
                 eventClick: function (info) {
+                    console.log(info)
                     modalReset();
                     const event = info.event;
                     $('#title').val(event.title);
@@ -177,7 +178,7 @@
 
         function submitEventFormData() {
             let eventId = $("#eventId").val();
-            let url = '{{route('events.store')}}';
+            let url = "{{route('events.store')}}";
             let postData = {
                 start: $('#startDateTime').val(),
                 end: $('#endDateTime').val(),
