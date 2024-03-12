@@ -25,7 +25,7 @@ class GoogleService
         $client = new \Google_Client();
         $client->setApplicationName("Events");
         $client->setScopes($all_scopes);
-        $client->setAuthConfig(storage_path('app/googleClient/client_secret.json'));
+        // $client->setAuthConfig(storage_path('app/googleClient/client_secret.json'));
         $client->setState('gcalendar');
         $client->setRedirectUri(route($redirectURL));
         $client->setAccessType('offline');
