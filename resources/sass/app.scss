@@ -1,8 +1,17 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+#calendar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.mr-auto {
+    margin-right: auto;
+}

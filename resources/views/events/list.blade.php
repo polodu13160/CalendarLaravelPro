@@ -1,18 +1,5 @@
 @extends('layouts.app')
 
-@push('css')
-    <style>
-        #calendar a {
-            color: #000000;
-            text-decoration: none;
-        }
-
-        .mr-auto {
-            margin-right: auto;
-        }
-    </style>
-@endpush
-
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
